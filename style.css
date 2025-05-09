@@ -1,0 +1,75 @@
+/* Reset default margin dan padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; /* Mengatur layout secara vertikal */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  width: 320px;
+  text-align: center;
+  margin-bottom: 20px; /* Memberikan ruang antara login dan footer */
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0066cc;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #005bb5;
+}
+
+#error-msg {
+  color: red;
+  margin-top: 10px;
+}
+
+footer {
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+}
+
+footer a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
